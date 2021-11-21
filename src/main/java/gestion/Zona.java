@@ -23,12 +23,12 @@ public class Zona {
 		return this.nombre;
 	}
 	
-	public void setZoologico(Zoologico zoo) {
+	public void setZoo(Zoologico zoo) {
 		this.zoo = zoo;
 	}
 	
-	public String getZoo() {
-		return this.zoo.getNombre();
+	public Zoologico getZoo() {
+		return this.zoo;
 	}
 	
 	public void agregarAnimales (Animal animal) {
