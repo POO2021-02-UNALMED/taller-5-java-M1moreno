@@ -35,7 +35,7 @@ public class Zona {
 		animales.add(animal);
 	}
 	
-	public int cantidadAnimales (ArrayList[Animal] animales) {
+	public int cantidadAnimales (ArrayList<Animal> animales) {
 		int cantidad;
 		 for (int i = 0; i < animales.size(); i++) {
 			 cantidad += 1;

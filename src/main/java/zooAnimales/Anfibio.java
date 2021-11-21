@@ -1,5 +1,5 @@
 package zooAnimales;
-package gestion.Zona;
+import gestion.Zona;
 import java.util.*;
 
 public class Anfibio extends Animal {
@@ -44,7 +44,7 @@ public class Anfibio extends Animal {
 		return "saltar";
 	}
 	
-	public int static cantidadAnfibios() {
+	public static int cantidadAnfibios() {
 		return listado.size();
 	}
 	

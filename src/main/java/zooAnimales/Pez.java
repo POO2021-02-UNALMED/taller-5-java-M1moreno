@@ -44,7 +44,7 @@ public class Pez extends Animal {
 		return "nadar";
 	}
 	
-	public int static cantidadPeces () {
+	public static int cantidadPeces () {
 		return listado.size();
 	}
 	
