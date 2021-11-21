@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Pez extends Animal {
 	
-	private ArrayList<Pez> listado;
+	private static ArrayList<Pez> listado;
 	public static int salmones;
 	public static int bacalaos;
 	private String colorEscamas;
@@ -50,11 +50,13 @@ public class Pez extends Animal {
 	
 	public void crearSalmon(String nombre, int edad, String genero) {
 		salmones++;
-		return new Pez(nombre, edad, "oceano", genero, "rojo", 6);
+		salmon = new Pez(nombre, edad, "oceano", genero, "rojo", 6);
+		return salmon;
 	}
 	
 	public void crearBacalao() {
 		bacalaos++;
-		return new Pez(nombre, edad, "oceano", genero, "gris", 6);
+		bacalao = new Pez(nombre, edad, "oceano", genero, "gris", 6);
+		return bacalao;
 	}
 }

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Mamifero extends Animal {
 	
-	private Arraylist<Mamifero> listado;
+	private static Arraylist<Mamifero> listado;
 	public static int caballos;
 	public static int leones;
 	private boolean pelaje;
@@ -46,11 +46,13 @@ public class Mamifero extends Animal {
 	
 	public void crearCaballo(String nombre, int edad, String genero) {
 		caballos++;
-		return new Mamifero(nombre, edad, "pradera", genero, 4, true);
+		caballo = new Mamifero(nombre, edad, "pradera", genero, true, 4);
+		return caballo;
 	}
 	
 	public void crearLeon(String nombre, int edad, String genero) {
 		leones++;
-		return new Mamifero(nombre, edad, "selva", genero, 4, true);
+		leon = new Mamifero(nombre, edad, "selva", genero, true, 4);
+		return leon;
 	}
 }

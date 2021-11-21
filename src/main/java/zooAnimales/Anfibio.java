@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Anfibio extends Animal {
 	
-	private ArrayList<Anfibio> listado;
+	private static ArrayList<Anfibio> listado;
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
@@ -50,11 +50,13 @@ public class Anfibio extends Animal {
 	
 	public void crearRana(String nombre, int edad, String genero) {
 		ranas++;
-		return new Anfibio(nombre, edad, "selva", genero, "rojo", true);
+		rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
+		return rana;
 	}
 	
 	public void crearSalamandra() {
 		salamandras++;
-		return new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
+		salamandra = new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
+		return salamandra;
 	}
 }

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Reptil extends Animal {
 	
-	private ArrayList<Reptil> listado;
+	private static ArrayList<Reptil> listado;
 	public static int iguanas;
 	public static int serpientes;
 	private String colorEscamas;
@@ -50,11 +50,13 @@ public class Reptil extends Animal {
 	
 	public void crearIguana(String nombre, int edad, String genero) {
 		iguanas++;
-		return new Reptil(nombre, edad, "humedal", genero, "verde", 3);
+		iguana = new Reptil(nombre, edad, "humedal", genero, "verde", 3);
+		return iguana;
 	}
 	
 	public void crearSerpiente() {
 		serpientes++;
-		return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
+		serpiente = new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
+		return serpiente; 
 	}
 }

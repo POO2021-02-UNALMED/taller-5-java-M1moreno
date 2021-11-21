@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Ave extends Animal {
 	
-	private ArrayList<Ave> listado;
+	private static ArrayList<Ave> listado;
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
@@ -40,11 +40,13 @@ public class Ave extends Animal {
 	
 	public void crearHalcon(String nombre, int edad, String genero) {
 		halcones++;
-		return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
+		halcon = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
+		return halcon;
 	}
 	
 	public void crearAguila(String nombre, int edad, String genero) {
 		aguilas++;
-		return new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
+		aguila = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
+		return aguila;
 	}
 }
