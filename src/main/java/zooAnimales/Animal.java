@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Animal {
 	
 	private static int totalAnimales;
-	private String nombre;
-	private int edad;
-	private String habitat;
-	private String genero;
+	protected String nombre;
+	protected int edad;
+	protected String habitat;
+	protected String genero;
 	private Zona zona;
 	
 	public Animal (String nombre, int edad, String habitat, String genero) {
