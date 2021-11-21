@@ -34,10 +34,10 @@ public class Zoologico {
 		 zonas.add(zona);
 	 }
 	 
-	 public int cantidadTotalAnimales (ArrayList<Zona> zonas) {
+	 public int cantidadTotalAnimales () {
 		 int cantidad;
-		 for (int i = 0; i < zonas.size(); i++) {
-			 cantidad += zonas.get(i).animales.size();
+		 for (int i = 0; i < this.zonas.size(); i++) {
+			 cantidad += this.zonas.get(i).animales.size();
 		 }
 		 return cantidad;
 	 }

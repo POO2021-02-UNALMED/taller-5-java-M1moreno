@@ -6,7 +6,7 @@ public class Zona {
 	
 	private String nombre;
 	private Zoologico zoo;
-	private ArrayList<Animal> animales = new ArrayList<Animal>();
+	protected ArrayList<Animal> animales = new ArrayList<Animal>();
 	
 	public Zona (String nombre, Zoologico zoo) {
 		this.nombre = nombre;
@@ -35,9 +35,9 @@ public class Zona {
 		animales.add(animal);
 	}
 	
-	public int cantidadAnimales (ArrayList<Animal> animales) {
+	public int cantidadAnimales () {
 		int cantidad = 0;
-		 for (int i = 0; i < animales.size(); i++) {
+		 for (int i = 0; i < this.animales.size(); i++) {
 			 cantidad += 1;
 		 }
 		 return cantidad;
