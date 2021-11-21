@@ -27,7 +27,7 @@ public class Zona {
 		this.zoo = zoo;
 	}
 	
-	public String getZoologico() {
+	public String getZoo() {
 		return this.zoo.getNombre();
 	}
 	
@@ -35,11 +35,7 @@ public class Zona {
 		animales.add(animal);
 	}
 	
-	public int cantidadAnimales () {
-		int cantidad = 0;
-		 for (int i = 0; i < this.animales.size(); i++) {
-			 cantidad += 1;
-		 }
-		 return cantidad;
+	public int cantidadAnimales() {
+		return animales.size();
 	}
 }
